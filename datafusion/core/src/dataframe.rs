@@ -889,6 +889,10 @@ impl TableProvider for DataFrameTableProvider {
         self
     }
 
+    fn as_any_mut(&mut self) -> &mut dyn Any {
+        self
+    }
+
     fn get_logical_plan(&self) -> Option<&LogicalPlan> {
         Some(&self.plan)
     }

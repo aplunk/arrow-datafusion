@@ -58,6 +58,10 @@ impl TableProvider for EmptyTable {
         self
     }
 
+    fn as_any_mut(&mut self) -> &mut dyn Any {
+        self
+    }
+
     fn schema(&self) -> SchemaRef {
         self.schema.clone()
     }

@@ -38,6 +38,10 @@ pub trait TableProvider: Sync + Send {
     /// downcast to a specific implementation.
     fn as_any(&self) -> &dyn Any;
 
+    /// Returns the table provider as mutable [`Any`](std::any::Any) so that it can be
+    /// downcast to a specific implementation.
+    fn as_any_mut(&mut self) -> &mut dyn Any;
+
     /// Get a reference to the schema for this table
     fn schema(&self) -> SchemaRef;
 
