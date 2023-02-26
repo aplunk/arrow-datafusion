@@ -43,9 +43,9 @@ unicode_expressions = ["unicode-segmentation"]
 
 [dependencies]
 ahash = { version = "0.8", default-features = false, features = ["runtime-rng"] }
-arrow = { version = "33.0.0", features = ["prettyprint"] }
-arrow-buffer = "33.0.0"
-arrow-schema = "33.0.0"
+arrow = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support", features = ["prettyprint"] }
+arrow-buffer = {git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support"}
+arrow-schema = {git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support"}
 blake2 = { version = "^0.10.2", optional = true }
 blake3 = { version = "1.0", optional = true }
 chrono = { version = "0.4.23", default-features = false }

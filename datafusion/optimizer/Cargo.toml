@@ -37,7 +37,7 @@ default = ["unicode_expressions"]
 unicode_expressions = []
 
 [dependencies]
-arrow = { version = "33.0.0", features = ["prettyprint"] }
+arrow = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support", features = ["prettyprint"] }
 async-trait = "0.1.41"
 chrono = { version = "0.4.23", default-features = false }
 datafusion-common = { path = "../common", version = "18.0.0" }
