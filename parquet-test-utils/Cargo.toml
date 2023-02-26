@@ -24,5 +24,5 @@ edition = "2021"
 
 [dependencies]
 datafusion = { path = "../datafusion/core" }
-object_store = "0.5.4"
-parquet = "33.0.0"
+object_store = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support" }
+parquet = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support" }

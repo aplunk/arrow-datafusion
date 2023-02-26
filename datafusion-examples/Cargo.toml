@@ -34,9 +34,9 @@ path = "examples/avro_sql.rs"
 required-features = ["datafusion/avro"]
 
 [dev-dependencies]
-arrow = "33.0.0"
-arrow-flight = { version = "33.0.0", features = ["flight-sql-experimental"] }
-arrow-schema = "33.0.0"
+arrow = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support" }
+arrow-flight = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support", features = ["flight-sql-experimental"] }
+arrow-schema = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support" }
 async-trait = "0.1.41"
 dashmap = "5.4"
 datafusion = { path = "../datafusion/core" }
@@ -49,7 +49,7 @@ futures = "0.3"
 log = "0.4"
 mimalloc = { version = "0.1", default-features = false }
 num_cpus = "1.13.0"
-object_store = { version = "0.5.4", features = ["aws"] }
+object_store = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support", features = ["aws"]  }
 prost = { version = "0.11", default-features = false }
 prost-derive = { version = "0.11", default-features = false }
 serde = { version = "1.0.136", features = ["derive"] }

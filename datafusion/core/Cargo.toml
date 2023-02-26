@@ -86,7 +86,7 @@ num-traits = { version = "0.2", optional = true }
 num_cpus = "1.13.0"
 object_store = {git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support"}
 parking_lot = "0.12"
-parquet = { version = "33.0.0", features = ["arrow", "async"] }
+parquet = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support", features = ["arrow", "async"] }
 paste = "^1.0"
 percent-encoding = "2.2.0"
 pin-project-lite = "^0.2.7"
@@ -95,7 +95,7 @@ rayon = { version = "1.5", optional = true }
 smallvec = { version = "1.6", features = ["union"] }
 sqlparser = { version = "0.30", features = ["visitor"] }
 tempfile = "3"
-tokio = { version = "1.0", features = ["macros", "rt", "rt-multi-thread", "sync", "fs", "parking_lot"] }
+tokio = { version = "1.25.0", features = ["macros", "rt", "rt-multi-thread", "sync", "fs", "parking_lot"] }
 tokio-stream = "0.1"
 tokio-util = { version = "0.7.4", features = ["io"] }
 url = "2.2"

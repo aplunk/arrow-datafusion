@@ -28,11 +28,11 @@ async-recursion = "1.0"
 chrono = "0.4.23"
 datafusion = { path = "../core" }
 itertools = "0.10.5"
-object_store = "0.5.4"
+object_store = { git = "https://github.com/aplunk/arrow-rs", branch = "add_r2_support" }
 prost = "0.11"
 prost-types = "0.11"
 substrait = "0.4"
-tokio = "1.17"
+tokio = "1.25.0"
 
 [build-dependencies]
 prost-build = { version = "0.9" }
